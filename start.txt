@@ -11,3 +11,44 @@ package.json:
 
 npm run build
 npm run watch
+
+
+
+
+
+git init;
+git status
+
+
+Глобальные настройки GIT
+
+		git config user.name vashishin
+		git config user.email vashishin@itstep.org
+
+        git config --global user.name 'vashishin'
+        git config --global user.eamil vashishin@itstep.org
+        git config --list
+
+
+git add .
+$ git commit -m 'description'
+
+Привязка локального и удаленного репозитория
+git remote add remote-repo
+
+Проверка
+git remote -v
+
+Выгружаем данные в удаленный репозиторий (remote-repo)(remote-repo)
+git push remote-repo master
+
+Получение данных из репозитория
+git fetch название репозитория
+
+или
+git pull remote-repo master
+
+
+
+
+git rm -r --cached .idea - удаление 
