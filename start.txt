@@ -12,13 +12,8 @@ package.json:
 npm run build
 npm run watch
 
-
-
-
-
 git init;
 git status
-
 
 Глобальные настройки GIT
 
@@ -48,7 +43,31 @@ git fetch название репозитория
 или
 git pull remote-repo master
 
+git rm -r --cached .idea - удаление
 
 
+Опции для Babel
 
-git rm -r --cached .idea - удаление 
+
+"watch": "-w"  - флаг для запуска в режиме наблюдения
+"--out-dir dist"  -d  флаг для компиляции es6 in es5 і сохранение в указаной директории dist
+
+'babel src -o dist/es5.js'  - сохранение всех файлов es6 в дериктории src в одном файле в дериктории dist/es5.js
+
+
+'babel src -o dist --minified' - для сжатия файлов при компиляции
+
+'babel src - dist/es5.js --ignore *test.js' - кроме файлов с окончанием *test.js
+
+
+Те же настройки можно указать в файле package.json
+
+"babel":{
+    "presets" : ["es2015"],
+    "plugins" : [],
+    "minified": true,
+    "ignore"  : "test.js"
+  },
+
+
+}

@@ -1,0 +1,13 @@
+«Полифилл» (англ. polyfill) – это библиотека,
+которая добавляет в старые браузеры поддержку возможностей,
+которые в современных браузерах являются встроенными.
+
+
+https://babeljs.io/docs/usage/polyfill/
+
+
+
+npm install --save-dev babel-polyfill   - install polyfill
+
+
+При использовании необходимо подключить babel-polyfill в index.html (только после установки)

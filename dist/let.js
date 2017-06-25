@@ -1,0 +1,38 @@
+"use strict";
+
+var name = "Dmitriy";
+var heloo = "Heloo World";
+
+if (true) {
+    var vES5 = 'ES5';
+    var vES6 = 'ES6';
+};
+
+console.log(vES5);
+//console.log(vES6);
+
+
+var input = document.querySelectorAll('input');
+
+for (let i = 0; i < input.length; i++) {
+    var btn = input[i];
+    //console.log(i);
+    btn.setAttribute('value', i);
+    btn.onclick = function () {
+        console.log(i);
+    };
+    //btn.addEventListener('click',function(){
+    //    console.log(i);
+    //})
+}
+
+//
+//for(let i = 0; i < input.length; i++){
+//    var btn = input[i];
+//    btn.setAttribute('value',i);
+//    btn.onclick = function(){
+//        console.log(i)
+//    }
+//}
+
+
